@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Metadados do documento -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio</title>
+    <style>
+        /* Estilos CSS */
+        /* Definições de estilo para o corpo do documento */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #f5f5f5, #eceff1);
+        }
+
+        /* Estilos para o cabeçalho */
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        /* Estilos para a navegação */
+        nav ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: #444;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #f06292;
+        }
+
+        /* Estilos para as seções */
+        section {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Estilos para o formulário de contato */
+        form {
+            display: grid;
+            gap: 10px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #f06292;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #d81b60;
+        }
+
+        /* Estilos para o rodapé */
+        footer {
+            text-align: center;
+            font-size: 0.8em;
+            margin-top: 50px;
+            padding: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <h1>Meu Portfólio</h1>
+    </header>
+    
+    <!-- Navegação -->
+    <nav>
+        <ul>
+            <li><a href="#sobre">Sobre Mim</a></li>
+            <li><a href="#formacao">Formação Educacional</a></li>
+            <li><a href="#portfolio">Portfólio</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+    
+    <!-- Seção Sobre Mim -->
+    <section id="sobre">
+        <h2>Sobre Mim</h2>
+        <p>
+            <!-- Conteúdo sobre você -->
+            Olá a todos! Meu nome é Lucas e quero compartilhar um pouco sobre mim. Trabalho atualmente
+            como desenvolvedor fullstack em uma aplicação Cloud utilizando Dotnet WebApi e Typescript no 
+            framework Vue.js. Estou nesse trabalho faz 2 anos, e antes de me envolver com o Cloud, fazia
+            parte da equipe de desenvolvimento da mesma solução, porém sua versão cliente/servidor, onde
+            a linguagem utilizada é a C++. Atualmente curso Análise e Desenvolvimento de Sistemas pela
+            Uninter, e meu grande sonho é trabalhar remotamente para uma empresa do exterior, recebendo
+            em moeda forte e expandindo meus horizontes. Eterno Cruzeirense.
+        </p>
+    </section>
+    
+    <!-- Seção Formação Educacional -->
+    <section id="formacao">
+        <h2>Formação Educacional</h2>
+        <p>
+            <!-- Conteúdo sobre sua formação educacional -->
+            Possuo Ensino Médio Completo pela Escola Estadual David Campista. Atualmente curso ADS pela
+            Uninter. Tenho amplo domínio na língua inglesa, tanto para escrita, fala e audição. Dentre
+            outros cursos, me formei na modalidade de aprendizagem em Administração pelo SENAI, e me 
+            formei Técnico em Informática pelo Instituto Federal de Minas Gerais.
+        </p>
+    </section>
+    
+    <!-- Seção Portfólio -->
+    <section id="portfolio">
+        <h2>Portfólio</h2>
+        <p>
+            <!-- Conteúdo do seu portfólio -->
+            Aqui estão alguns dos meus projetos e trabalhos:
+        </p>
+        <ul>
+            <!-- Links para projetos e trabalhos -->
+            <li><a href="https://github.com/Lcs-Silva/Login-Cursos" target="_blank">Projeto Login Cursos</a></li>
+            <li><a href="https://github.com/Lcs-Silva/.Net5API-FilmeEDiretor" target="_blank">Projeto .Net5API Filme e Diretor</a></li>
+            <li><a href="https://github.com/Lcs-Silva/Vogais-Consoantes-Numeros" target="_blank">Projeto Vogais, Consoantes e Números</a></li>
+            <li><a href="https://github.com/Lcs-Silva/Advice-Generator" target="_blank">Projeto Advice Generator</a></li>
+            <li><a href="https://github.com/Lcs-Silva/Buscador-CEP" target="_blank">Projeto Buscador de CEP</a></li>
+            <li><a href="https://github.com/Lcs-Silva/Pong8-Bits" target="_blank">Projeto Pong 8 Bits</a></li>
+        </ul>
+    </section>
+    
+    <!-- Seção Contato -->
+    <section id="contato">
+        <h2>Contato</h2>
+        <form id="contact-form">
+            <!-- Formulário de contato -->
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Mensagem:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+    
+    <!-- Script JavaScript -->
+    <script>
+        // Script para lidar com o envio do formulário de contato
+        document.addEventListener("DOMContentLoaded", function () {
+            const contactForm = document.getElementById("contact-form");
+            contactForm.addEventListener("submit", function (event) {
+                event.preventDefault();
+                alert("Mensagem enviada com sucesso!");
+                contactForm.reset();
+            });
+        });
+    </script>
+</body>
+</html>
